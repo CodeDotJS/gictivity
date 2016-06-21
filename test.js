@@ -9,23 +9,23 @@ test(async t => {
 	const gitYear = await fn.year('codedotjs');
 	const gitPin = await fn.pin('codedotjs');
 
-	t.is(gitDay.commits, '9 commits');
+	t.is(gitDay.commits, '13 commits');
 	t.is(gitDay.pulls, null);
 	t.is(gitDay.issues, null);
 
-	t.is(gitDays.commits, '38 commits');
+	t.is(gitDays.commits, '42 commits');
 	t.is(gitDays.pulls, null);
 	t.is(gitDays.issues, null);
 
-	t.is(gitWeek.commits, '62 commits');
+	t.is(gitWeek.commits, '66 commits');
 	t.is(gitWeek.pulls, '3 Pull Requests');
 	t.is(gitWeek.issues, '1 Issue reported');
 
-	t.is(gitMonth.commits, '211 commits');
+	t.is(gitMonth.commits, '215 commits');
 	t.is(gitMonth.pulls, '12 Pull Requests');
 	t.is(gitMonth.issues, '6 Issues reported');
 
-	t.is(gitYear, '1,793 contributions in the last year');
+	t.is(gitYear, '1,797 contributions in the last year');
 
 	t.is(gitPin.repo1, 'instavim');
 	t.is(gitPin.repo2, 'facebook-mass-comment');
