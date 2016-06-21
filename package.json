@@ -1,0 +1,46 @@
+{
+  "name": "gictivity",
+  "version": "1.0.0",
+  "description": "Activities of a github user.",
+  "main": "index.js",
+  "dependencies": {
+    "got": "*",
+    "cheerio": "*",
+    "pinkie-promise": "*"
+  },
+  "devDependencies": {
+    "xo": "*",
+    "ava": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeDotJS/gictivity.git"
+  },
+  "keywords": [
+    "github",
+    "git",
+    "find",
+    "total",
+    "pinned",
+    "day",
+    "days",
+    "year",
+    "weeks",
+    "month",
+    "count",
+    "contributions",
+    "repository"
+  ],
+  "author": "Rishi Giri <rushforlinux@gmail.com> (http://rishigiri.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeDotJS/gictivity/issues"
+  },
+  "homepage": "https://github.com/CodeDotJS/gictivity#readme"
+}
