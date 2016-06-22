@@ -59,7 +59,8 @@ gictivity.day('CodeDotJS').then(contributions => {
 })
 ```
 
-__```NOTE :```__ `returns` __```null```__ is 
+__```NOTE :```__ `returns` __```null```__ `if values are not set or found in user's github profile`
+
 ## API
 
 ### __```gictivity.pin('username')```__
