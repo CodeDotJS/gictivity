@@ -33,7 +33,9 @@ function gitYear(username) {
 	var url = 'https://github.com/' + username;
 	return got(url).then(function (res) {
 		var $ = cheerio.load(res.body);
-		return $('h3').eq(2).text().trim() || null;
+		return {
+			contributions: $('h3').eq(2).text().trim() || null
+		};
 	}).catch(function (err) {
 		if (err.statusCode === 404) {
 			err.message = 'user doesn\'t exists';
